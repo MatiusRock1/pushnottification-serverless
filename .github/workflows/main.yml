@@ -29,6 +29,6 @@ jobs:
         with:
           aws_access_key_id: AKIAVS37KHT6DMZKZE6X
           aws_secret_access_key: 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
-          aws_region: eu-central-1
+          aws_region: us-east-1
           function_name: funciontest
           zip_file: app.zip
