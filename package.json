@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "aws-serverless-express": "^3.4.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  },
+  "scripts": {
+    "start": "concurrently 'npm:mongoDB' 'npm:dev'",
+    "dev": "MONGODB_URL=mongodb://localhost:27017 node dev.js",
+    "mongoDB": "docker run -p 27017:27017 mongo"
+  }
+  
+}
